@@ -61,7 +61,7 @@ void _start(void)
 
 The world is locked down to Java cards – you can control _only_ the Java VM you are loaded in. But, ARM "Cortex-M0"-like cards in the wild are.. extremely cool – you can send your ATR or even decide a default ISO7816 speed (instead of 10752 bauds). Maybe, even to make a game that you could play with a U(S)ART adapter.
 
-I have asked a seller for code samples for this model. They didn't provide any. The chip ships with a precompiled stock OS, so I found a way in into the original bootloader, and made my own bootloader on top of it that you can actually test your code without a fear of breaking the card (boot-once-once feature).
+I have asked a seller for code samples for this model. They didn't provide any. The chip ships with a precompiled stock OS, so I found a way in into the original bootloader, and made my own bootloader on top of it that you can actually test your code without a fear of breaking the card (run-once feature).
 
 ## Getting help
 
