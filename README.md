@@ -1,7 +1,7 @@
 # THC80F340A SDK
 
 [![License: PolyForm Noncommercial 1.0.0](https://img.shields.io/badge/license-PolyForm%20Noncommercial%201.0.0-blue)](LICENSE.md)
-![Arch](https://img.shields.io/badge/arch-Cortex--M0%20(ARMv6--M)-informational)
+![Arch](https://img.shields.io/badge/arch-SecurCore%20SC000%20(ARMv6--M)-informational)
 ![Status](https://img.shields.io/badge/status-research%20%2F%20experimental-orange)
 
 A bare-metal SDK and custom bootloader for the **THC80F340A**, an Arm Cortex-M0 smart-card (aka CPU card): a hardware abstraction layer, linker scripts, a bootloader that can run your own code, and the host-side tooling to get code onto the chip.
