@@ -1,6 +1,6 @@
 # THC80F340A SDK
 
-[![License: PolyForm Noncommercial 1.0.0](https://img.shields.io/badge/license-PolyForm%20Noncommercial%201.0.0-blue)](LICENSE.md)
+[![License: WTFPL](https://img.shields.io/badge/license-WTFPL-blue)](LICENSE.md)
 ![Arch](https://img.shields.io/badge/arch-SecurCore%20SC000%20(ARMv6--M)-informational)
 ![Status](https://img.shields.io/badge/status-research%20%2F%20experimental-orange)
 
@@ -69,7 +69,7 @@ Open an issue on this repo — questions, bug reports, and "this bricked my card
 
 ## License
 
-Source-available under the [PolyForm Noncommercial 1.0.0](LICENSE.md) license: free for hobby, personal, research, educational, and nonprofit use. Commercial use is not permitted.
+Released under the [WTFPL](LICENSE.md) — do what the fuck you want to.
 
 ## Flash map of the stock bootloader
 
