@@ -77,8 +77,8 @@ Source-available under the [PolyForm Noncommercial 1.0.0](LICENSE.md) license: f
 
 ## How we flash our brand-new bootloader
 
-1. We patch that part at **0x1000**, at **0x1554** we patch a command with our own **JMP** instruction. So calling a factory test routine sends us straight into our shell-code that does the IVT remapping.
-2. We trigger it: the shellcode remaps IVT table to rom the default **0x00** location to RAM. So we can write to **0x00** without bricking the card. The card has NOR memory, so before updating the vector table, we **have to** erase it first. Erasing IVT table in the runtime kills the card, trust me – we lose the IRQ0 vector responsible for the APDU comm link. Our last link.
+1. We patch that part at **0x1000**, at **0x1554** we patch a command with our own **JMP** instruction. So calling a factory test routine sends us straight into our shellcode that does the IVT remapping.
+2. We trigger it: the shellcode remaps IVT table from the default **0x00** location to RAM. So we can erase the page **0x000 - 0x200** without bricking the card. The card has NOR memory, so before updating the vector table, we **have to** erase it first. Erasing IVT table in the runtime kills the card, trust me – we lose the IRQ0 vector responsible for the APDU comm link. Our last link.
 3. Then we use the `set-base` and `write` APDU commands to overwrite all of the stock bootloader with our own.
 4. On the next boot our bootloader is going to welcome us with our own command-set. Now you can upload your own code to 0x8000
 
