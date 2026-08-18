@@ -4,9 +4,9 @@
 ![Arch](https://img.shields.io/badge/arch-SecurCore%20SC000%20(ARMv6--M)-informational)
 ![Status](https://img.shields.io/badge/status-research%20%2F%20experimental-orange)
 
-A bare-metal SDK and custom bootloader for the **THC80F340A**, an Arm Cortex-M0 smart-card (aka CPU card): a hardware abstraction layer, linker scripts, a bootloader that can run your own code, and the host-side tooling to get code onto the chip.
+A bare-metal SDK and custom bootloader for the **THC80F340A**, an Arm "Cortex-M0"-like smart-card (aka CPU card): drivers, linker scripts, a bootloader that can run your own code, and the host-side tooling to get code onto the chip.
 
-It has NOR flash (erase-only, with a full-page reset) with the size of 0x55000 bytes (340kb), and around 0x2A00 of RAM.
+It has NOR flash (erase-only, with a full-page reset) with the size of 0x55000 bytes (340kb), and around 0x2A00 bytes (10.5kb) of RAM.
 
 > **⚠️ Research repo, not a product.** No datasheet section covers any of this — it was all recovered by reverse-engineering the stock firmware pulled off the chip: static analysis in Ghidra to map the stock bootloader. It has not seen production testing across silicon revisions, or got audited for security.
 
