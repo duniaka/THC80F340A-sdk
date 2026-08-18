@@ -1,0 +1,9 @@
+:Bootloader running in RAM -- exercise its own opcode set
+
+# OP_SET_ADDR 0x20000000: point WPTR=RPTR at the base of RAM
+>00 02 00 00 04 20 00 00 00
+<90 00
+
+# OP_READ 0x10: read 16 bytes from RPTR (contents unknown -> wildcards), then SW
+>00 03 00 00 10
+<XX XX XX XX XX XX XX XX XX XX XX XX XX XX XX XX 90 00

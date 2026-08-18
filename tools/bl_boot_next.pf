@@ -1,0 +1,8 @@
+:SET_IVT single-shot pointer -> 0x8000
+
+>00 04 00 00 04 00 00 80 00
+<90 00
+
+:Reset -- single_shot_boot boots the pointer (ATR below is the booted app's)
+
+WARM

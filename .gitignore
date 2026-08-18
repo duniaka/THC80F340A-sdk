@@ -1,0 +1,20 @@
+# Build outputs
+build/
+
+# Local scratch / stashed tools (not published)
+ignore/
+
+# Claude Code project instructions (not published)
+CLAUDE.md
+
+# Python
+__pycache__/
+*.pyc
+
+# Compiler intermediates
+*.elf
+*.o
+
+# Editor / env
+.venv/
+.idea/
